@@ -10,13 +10,15 @@ public class Coche {
         velocidade=0;
     }
     public int getVelocidade(){
-        return this.velocidade;
+        return velocidade;
     }
     public void acelerar(int valor){
-        int acelerar = this.velocidade+valor;
+        velocidade = velocidade+valor;
+        System.out.println("Velocidade =" + velocidade);
     }
     public void frenar (int menos){
-        int frenar = this.velocidade-menos;
+        velocidade = velocidade-menos;
+        System.out.println("Velocidade =" + velocidade);
     }
     
 }
